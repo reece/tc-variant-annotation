@@ -35,7 +35,9 @@ considerations.
 
 ## Take-home challenge
 
-* Fork this repo as a private repo.  Create a branch and work in that.
+* Fork this repo. Alternatively, you may want to duplicate this repo
+  and make your clone private if you are concerned about visibility
+  and public activity.
 
 * Write a module that provides a service to annotate variants using
   Ensembl (see below).  We want to report these values: input variant,
