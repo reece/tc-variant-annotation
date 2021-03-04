@@ -1,0 +1,165 @@
+[
+   {
+      "allele_string": "G/A",
+      "assembly_name": "GRCh38",
+      "colocated_variants": [
+         {
+            "allele_string": "COSMIC_MUTATION",
+            "end": 152387156,
+            "id": "COSV54898013",
+            "phenotype_or_disease": 1,
+            "seq_region_name": "6",
+            "somatic": 1,
+            "start": 152387156,
+            "strand": 1,
+            "var_synonyms": {
+               "COSMIC": [
+                  "COSM288577"
+               ]
+            }
+         },
+         {
+            "allele_string": "G/A",
+            "clin_sig": [
+               "uncertain_significance",
+               "likely_benign"
+            ],
+            "clin_sig_allele": "A:likely_benign;A:conflicting_interpretations_of_pathogenicity",
+            "end": 152387156,
+            "frequencies": {
+               "A": {
+                  "gnomad": 0.0001076,
+                  "gnomad_afr": 0,
+                  "gnomad_amr": 0,
+                  "gnomad_asj": 9.932e-05,
+                  "gnomad_eas": 0,
+                  "gnomad_fin": 0,
+                  "gnomad_nfe": 0.0001501,
+                  "gnomad_oth": 0.0001634,
+                  "gnomad_sas": 0.0002613
+               }
+            },
+            "id": "rs757104773",
+            "phenotype_or_disease": 1,
+            "pubmed": [
+               25741868
+            ],
+            "seq_region_name": "6",
+            "start": 152387156,
+            "strand": 1,
+            "var_synonyms": {
+               "ClinVar": [
+                  "RCV000724249",
+                  "RCV000252722",
+                  "VCV000197975"
+               ],
+               "PhenCode": [
+                  "SYNE1:c.8403C>T"
+               ]
+            }
+         }
+      ],
+      "end": 152387156,
+      "id": "NC_000006.12:g.152387156G>A",
+      "input": "NC_000006.12:g.152387156G>A",
+      "most_severe_consequence": "synonymous_variant",
+      "regulatory_feature_consequences": [
+         {
+            "biotype": "open_chromatin_region",
+            "consequence_terms": [
+               "regulatory_region_variant"
+            ],
+            "impact": "MODIFIER",
+            "regulatory_feature_id": "ENSR00000809941",
+            "variant_allele": "A"
+         }
+      ],
+      "seq_region_name": "6",
+      "start": 152387156,
+      "strand": 1,
+      "transcript_consequences": [
+         {
+            "amino_acids": "Y",
+            "biotype": "protein_coding",
+            "cdna_end": 9122,
+            "cdna_start": 9122,
+            "cds_end": 8469,
+            "cds_start": 8469,
+            "codons": "taC/taT",
+            "consequence_terms": [
+               "synonymous_variant"
+            ],
+            "gene_id": "ENSG00000131018",
+            "gene_symbol": "SYNE1",
+            "gene_symbol_source": "HGNC",
+            "hgnc_id": "HGNC:17089",
+            "impact": "LOW",
+            "protein_end": 2823,
+            "protein_start": 2823,
+            "strand": -1,
+            "transcript_id": "ENST00000341594",
+            "variant_allele": "A"
+         },
+         {
+            "amino_acids": "Y",
+            "biotype": "protein_coding",
+            "cdna_end": 8968,
+            "cdna_start": 8968,
+            "cds_end": 8403,
+            "cds_start": 8403,
+            "codons": "taC/taT",
+            "consequence_terms": [
+               "synonymous_variant"
+            ],
+            "gene_id": "ENSG00000131018",
+            "gene_symbol": "SYNE1",
+            "gene_symbol_source": "HGNC",
+            "hgnc_id": "HGNC:17089",
+            "impact": "LOW",
+            "protein_end": 2801,
+            "protein_start": 2801,
+            "strand": -1,
+            "transcript_id": "ENST00000367255",
+            "variant_allele": "A"
+         },
+         {
+            "amino_acids": "Y",
+            "biotype": "protein_coding",
+            "cdna_end": 8900,
+            "cdna_start": 8900,
+            "cds_end": 8424,
+            "cds_start": 8424,
+            "codons": "taC/taT",
+            "consequence_terms": [
+               "synonymous_variant"
+            ],
+            "gene_id": "ENSG00000131018",
+            "gene_symbol": "SYNE1",
+            "gene_symbol_source": "HGNC",
+            "hgnc_id": "HGNC:17089",
+            "impact": "LOW",
+            "protein_end": 2808,
+            "protein_start": 2808,
+            "strand": -1,
+            "transcript_id": "ENST00000423061",
+            "variant_allele": "A"
+         },
+         {
+            "biotype": "retained_intron",
+            "cdna_end": 8621,
+            "cdna_start": 8621,
+            "consequence_terms": [
+               "non_coding_transcript_exon_variant"
+            ],
+            "gene_id": "ENSG00000131018",
+            "gene_symbol": "SYNE1",
+            "gene_symbol_source": "HGNC",
+            "hgnc_id": "HGNC:17089",
+            "impact": "MODIFIER",
+            "strand": -1,
+            "transcript_id": "ENST00000461872",
+            "variant_allele": "A"
+         }
+      ]
+   }
+]
