@@ -35,6 +35,8 @@ considerations.
 
 ## Take-home challenge
 
+* Fork this repo as a private repo.  Create a branch and work in that.
+
 * Write a module that provides a service to annotate variants using
   Ensembl (see below).  We want to report these values: input variant,
   `assembly name`, `seq_region_name`, `start`, `end`,
@@ -62,6 +64,8 @@ considerations.
   important to get "right" now and what can be deferred.  Discuss what
   your code achieves as well as what might be considered for future
   work.
+
+* Create a PR for your branch. Invite me to review it.
 
 
 ## Ensembl Annotation Sources
@@ -124,8 +128,6 @@ http (not https) for now.**
      }
   ]
   ```
-
-
 
 
 - Reece Hart, 2021
