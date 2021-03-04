@@ -35,11 +35,12 @@ considerations.
 
 ## Take-home challenge
 
-* Write a module that provides a service to annotate variants.  The
-  data source may be local or remote.  The choice of which data types
-  to return is up to you and need not be exhaustive (i.e., <10 columns
-  is fine!). Some ideas: Gene id, gene name, HGVS expressions,
-  population frequencies, and/or Sequence Ontology terms.
+* Write a module that provides a service to annotate variants using
+  Ensembl (see below).  We want to report these values: input variant,
+  `assembly name`, `seq_region_name`, `start`, `end`,
+  `most_severe_consequnece`, `strand`, and genes. Genes should be a
+  list of the unique `gene_symbol` field from
+  `transcript_consequences`.
 
 * Write an interface to that module.  You have two options:
 
@@ -63,12 +64,68 @@ considerations.
   work.
 
 
-## Hints
+## Ensembl Annotation Sources
 
-* The source of information is up to you.  If you're looking for sources, consider queries like:
-
+An example Ensembl query and edited response is below.  **N.B. Ensembl
+has two certs, one of which is old and leads to random failures. Use
+http (not https) for now.**
+  
   ```
   $ curl -H "Content-type:application/json" 'http://rest.ensembl.org/vep/human/hgvs/NC_000006.12:g.152387156G>A'
+  [
+     {
+        "allele_string": "G/A",
+        "assembly_name": "GRCh38",
+        "end": 152387156,
+        "most_severe_consequence": "synonymous_variant",
+        "seq_region_name": "6",
+        "start": 152387156,
+        "strand": 1,
+        "transcript_consequences": [
+           {
+              "amino_acids": "Y",
+              "biotype": "protein_coding",
+              "cdna_end": 8900,
+              "cdna_start": 8900,
+              "cds_end": 8424,
+              "cds_start": 8424,
+              "codons": "taC/taT",
+              "consequence_terms": [
+                 "synonymous_variant"
+              ],
+              "gene_id": "ENSG00000131018",
+              "gene_symbol": "SYNE1",
+              "gene_symbol_source": "HGNC",
+              "hgnc_id": "HGNC:17089",
+              "impact": "LOW",
+              "protein_end": 2808,
+              "protein_start": 2808,
+              "strand": -1,
+              "transcript_id": "ENST00000423061",
+              "variant_allele": "A"
+           },
+           {
+              "biotype": "retained_intron",
+              "cdna_end": 8621,
+              "cdna_start": 8621,
+              "consequence_terms": [
+                 "non_coding_transcript_exon_variant"
+              ],
+              "gene_id": "ENSG00000131018",
+              "gene_symbol": "SYNE1",
+              "gene_symbol_source": "HGNC",
+              "hgnc_id": "HGNC:17089",
+              "impact": "MODIFIER",
+              "strand": -1,
+              "transcript_id": "ENST00000461872",
+              "variant_allele": "A"
+           }
+        ]
+     }
+  ]
   ```
+
+
+
 
 - Reece Hart, 2021
