@@ -35,9 +35,8 @@ considerations.
 
 ## Take-home challenge
 
-* Fork this repo. Alternatively, you may want to duplicate this repo
-  and make your clone private if you are concerned about visibility
-  and public activity.
+* Go to https://github.com/reece/tc-variant-annotation and click "Use
+  this template".  Please make the repo private (for your benefit).
 
 * Write a module that provides a service to annotate variants using
   Ensembl (see below).  We want to report these values: input variant,
@@ -67,14 +66,15 @@ considerations.
   your code achieves as well as what might be considered for future
   work.
 
-* Create a PR for your branch. Invite me to review it.
+* Create a PR for your branch. Invite me to review it. Thanks!
 
 
 ## Ensembl Annotation Sources
 
 An example Ensembl query and edited response is below.  **N.B. Ensembl
 has two certs, one of which is old and leads to random failures. Use
-http (not https) for now.**
+http (not https) for now.** The response is also in
+`ensembl-sample-response.json`.
   
   ```
   $ curl -H "Content-type:application/json" 'http://rest.ensembl.org/vep/human/hgvs/NC_000006.12:g.152387156G>A'
