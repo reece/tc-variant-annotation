@@ -2,30 +2,37 @@
 
 ## Introduction
 
-The goal for this technical interview is to build a Python module to
-annotate biological sequence variants and return selected
-information. No prior knowledge of sequence variation is necessary.
-This challenge provides an opportunity to discuss the candidate's
-experience with variant annotation (not required), code architecture,
-coding skills and style.
+The goal for this technical interview is to understand how a candidate
+approaches a software development task.  We will discuss a project to
+annotate biological sequence variants using a remote REST service. No
+prior knowledge of sequence variation is necessary.  This challenge
+provides an opportunity to discuss the candidate's experience with
+variant annotation (not required), code architecture, coding skills
+and style.
 
 There is no right answer to this challenge. Given the breadth of
 relevant topics and skills, it is unlikely that candidates will be
 able to address all discussion areas and implementation
-considerations.
+considerations.  That's okay!
+
 
 ## In-Person Interview Discussion
+
+### Sequence variation
 
 * How are variants represented?
 * What kinds of variant annotation and sources is the candidate aware
   of? How are they distributed?
 * How can we search for annotations at these? What constitutes a
   matching variant? What challenges exist with matching variants?
-* What factors would you consider when choosing data sources for an
-  analysis pipeline in a clinical setting?
+
+### Code planning and architecture
 * We want to write a program to annotate lists of variants on a
   command line.  How would you structure this code?  What questions
   occur to you when thinking about code structure?
+* The proposed annotation system uses data from a remote REST
+  service. What factors occur to you as you think about this approach
+  in a clinical setting?
 * Suppose we now want to write an internal microservice for variant
   annotation. How does this change your code structure?  What
   standards and tools might we use to implement it?
