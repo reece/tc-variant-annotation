@@ -43,6 +43,8 @@ considerations.  That's okay!
 * Go to https://github.com/reece/tc-variant-annotation and click "Use
   this template".  Please make the repo private (for your benefit).
 
+* Create a new branch for your work.
+
 * Write a module that annotates variants using Ensembl (see below).
   We want to report these values: input variant, `assembly name`,
   `seq_region_name`, `start`, `end`, `most_severe_consequnece`,
@@ -61,10 +63,10 @@ considerations.  That's okay!
 
 ## Questions
 
-* Suppose we now want a web service interface that accepts a GET or
-  POST request and returns the annotation as JSON.  What tools or
-  standards would you implement this?  How does your code structure
-  change?
+* Suppose we now want to crate a web microservice that accepts a GET
+  (or POST) request with the variant in HGVS format and returns the
+  annotation as JSON.  What tools or standards would you implement
+  this?  How does your code structure change?
 
 * Start-ups and start-up employees must balance quick and satisfactory
   (i.e., good enough) results with more deliberate and reliable
